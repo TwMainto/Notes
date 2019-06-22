@@ -100,7 +100,7 @@ git add -A      将所有修改（包括新增的文件和删除的文件）加�
 git add -u    将版本库相关的修改（包括删除的文件，不包括新增的文件）加入cache
 git add -i     使用交互模式将修改加入cache
 git add-p      使用交互模式以补丁的形式将修改加入cache
-
+243, 143, 22
 ```
 
 ### 管理修改
@@ -138,7 +138,7 @@ git push origin master  //把本地的git库提交到远程 origin库的master�
 进入MSYS2 ，如果电脑没有关机，第一条然后进入分屏下进入git本地库内存位置即可使用
 
 1. tmux
-2. webpack --mode=development --watch
+2. webpack - -mode=development  - -watch
 3. ctrl+b  +  shift+5
 4. 切换光标位置  ctrl+b o
 5. 进入git库磁盘位置

@@ -100,9 +100,12 @@ git add -A      将所有修改（包括新增的文件和删除的文件）加�
 git add -u    将版本库相关的修改（包括删除的文件，不包括新增的文件）加入cache
 git add -i     使用交互模式将修改加入cache
 git add-p      使用交互模式以补丁的形式将修改加入cache
+git rebase -i HEAD~ 
 243, 143, 22
 
 ```
+
+
 
 ### 管理修改
 
@@ -145,14 +148,32 @@ git fetch team master
 git rebase team/master
 ```
 
-2.整理提交 dd剪切  p粘贴  git rebased -i @~* 进入VIM模式整理几条ci   DW 删除     git br master -f @~* 把几条提交设置为master   git push origin master
+2.使用 git rebase -i 进行commit 整理，如果不小心把master|REBASE 1/10 或者master|REBASE -i  玩出来了就用 git rebase --abort解决代码回退问题
 
 ## VIM
 
+#### 模式切换
+
+![1565273090284](C:\Users\17607\AppData\Roaming\Typora\typora-user-images\1565273090284.png)
+
+语法
+
 ```
-dd  	剪切
-p   	粘贴
-dw 		删除
+底行模式：
+:w	保存		:w filenme	另存为		:q	退出
+:wq	保存并退出		:e!	撤销更改返回上一次保存状态
+:q!	不保存强制退出		:set nu	设置行号
+
+命令模式：
+ZZ 保存并退出		u 撤销操作，可多次使用
+dd	剪切当前行		yy 复制当前行
+p	粘贴(粘贴后面的直到有空格)		dw	删除
+
+编辑模式：
+p	主提交		r	主提交，但编辑提交消息
+s	融入主提交 	f	融入主提交但丢弃此提交的日志消息
+d	删除提交
+
 ```
 
 进入MSYS2 ，如果电脑没有关机，第一条然后进入分屏下进入git本地库内存位置即可使用

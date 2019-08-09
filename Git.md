@@ -69,13 +69,20 @@ HEAM表示当前的版本库，一般情况它会和某个分支一致，在执�
 
 Git用  ~ 符号表示往前1个版本，用 ~ 3则表示往前数3个版本，因此，HEAD ~ 5 表示当前版本往前数5个版本 ， 89a26 ~ 2 表示这个版本往前数2个版本。
 
+### 远程仓库
+
+##### 在本机注册shh密钥：
+
+在电脑的用户主目录下打开Git bash输入cat ~/.shh/id_rsa.pub   判断是否已经存在本地公钥。使用  ssh -keygen -t rsa -C“tw17607972081@gmail.com” 进行公钥和密钥的创建，一路回车使用默认值完成创建，在从输入cat ~/.ssh/id_rsa.pub来获取你的公钥。
+
+##### 添加远程库
+
+在Github创建一个新的库，然后使用git remote add origin git@github com:tw17607972081@gmail.gmail/learngit.git命令建立本地库和远程库的关联，远程给库的名字是“origin”这个是git的默认叫法，也可以改成别的，下一步使用 git push -u origin master把本地库的内容推送到远程，用 ==git push==命令，实际上是把当前分支master推送到远程。
+
 ## 常用Git命令
 
 ```git
 mkdir name;创建库
-cd name;进入库
-pwd 查看位置
-git init 初始化
 git add name   添加文件
 git commit -m"说明"   提交文件
 git status 获取仓库当前状态
@@ -86,75 +93,37 @@ git checkout --<file>   丢弃工作区的修改
 git reset HEAD<file>   把暂存区的修改回退到工作区
 git rm    删除文件，但是可以用git checkout --<file>一键还原
 clip <~/.ssh/id_rsa.pub   拷贝公钥到你的粘贴板下
-cat ~/.ssh/id_rsa.pub   获取你的公钥。
-git remote add name git@github com:tw17607972081@gmail.com /learngit.git 
+cat ~/.ssh/id_rsa.pub   获取你的公钥
 git push -u origin master  把origin的内容推送到远程
 git clone  拉取git服务器上的文件
-git clone git:/xxx    克隆地址为git：//xxx的版本库
-git init   创建本地版本库
-git status 查看当前状态
-将修改移入cache：
-git add .gitignore    将特定文件加入cache
-git add -- *.json   将特定文件加入cache
-git add -A      将所有修改（包括新增的文件和删除的文件）加入cache
-git add -u    将版本库相关的修改（包括删除的文件，不包括新增的文件）加入cache
-git add -i     使用交互模式将修改加入cache
-git add-p      使用交互模式以补丁的形式将修改加入cache
-git rebase -i HEAD~ 
-243, 143, 22
-
+git rebase -i HEAD~   进入vi模式进行合并提交
 ```
 
+#### rebase
 
+1 .使用 git rebase -i 进行commit 整理，如果不小心把master|REBASE 1/10 或者master|REBASE -i  玩出来了就用 git rebase --abort解决代码回退问题
 
-### 管理修改
+2 .git rebase 还可以用来，把git  fetch 从远程库拉取下来的代码 合并到本地
 
-为什么Git比其他版本控制系统设计得更优秀，因为Git跟踪并管理的是修改，而非文件。
-
-##### 什么是修改？
-
-比如你新增了银行，这就是一个修改，删除了一行，也是一个修改，更改了某些字符，这些事一个修改，删除了一些又加了一些，这也是一个修改，甚至创建一个新文件也算一个修改。
-
-### 删除
-
-命令==git rm== 用于删除一个文件，如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近提交后你修改的内容。
-
-### 远程仓库
-
-##### 在本机注册shh密钥：
-
-在电脑的用户主目录下打开Git bash输入cat ~/.shh/id_rsa.pub   判断是否已经存在本地公钥。使用  ssh -keygen -t rsa -C"tw17607972081@gmail.com" 进行公钥和密钥的创建，一路回车使用默认值完成创建，在从输入cat ~/.ssh/id_rsa.pub来获取你的公钥。
-
-##### 添加远程库
-
-在Github创建一个新的库，然后使用git remote add origin git@github com:tw17607972081@gmail.gmail/learngit.git命令建立本地库和远程库的关联，远程给库的名字是“origin”这个是git的默认叫法，也可以改成别的，下一步使用 git push -u origin master把本地库的内容推送到远程，用 ==git push==命令，实际上是把当前分支master推送到远程。
+3 . 在一的基础上rebase 如果异常退出了vi窗口就可以用 git rebase - -edit -todo 来回到退出之前的vi
 
 ## 提交
 
 ```javascript
-git fetch origin master //拉取远程origin库master分支的数据到本地git库
-git rebase origin/master  //拉取本地origin库的master分支到本地文件夹
 git add login.png   //把修改的login.png文件添加到git暂存
 git commit -m"xxx"   //把git暂存的资源提交到git库
+git fetch origin master //拉取远程origin库master分支的数据到本地git库
+git rebase origin/master  //拉取本地origin库的master分支到本地文件夹
 git push origin master  //把本地的git库提交到远程 origin库的master分支中
 ```
-
-## 更新
-
-1. 合并代码
-
-```
-git fetch team master
-git rebase team/master
-```
-
-2.使用 git rebase -i 进行commit 整理，如果不小心把master|REBASE 1/10 或者master|REBASE -i  玩出来了就用 git rebase --abort解决代码回退问题
 
 ## VIM
 
 #### 模式切换
 
-![1565273090284](C:\Users\17607\AppData\Roaming\Typora\typora-user-images\1565273090284.png)
+1.  命令（默认）模式： 使用英文冒号：进入底行命令模式，	使用 a , i ,s , o四种方式进入编辑模式
+2. 编辑模式： esc 切换命令模式
+3. 底行命令模式：esc 切换到命令模式
 
 语法
 

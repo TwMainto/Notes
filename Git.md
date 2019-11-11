@@ -99,6 +99,15 @@ git clone  拉取git服务器上的文件
 git rebase -i HEAD~   进入vi模式进行合并提交
 git add -p 一行行加进去，全部到 cache 后，再 git di —cached 全部过一遍。 
 git reset --soft HEAD 撤销commit把提交的代码撤回到缓存区
+git commit --amend		修改commit提交的注释信息 
+git branch              查看分支
+git branch name         创建name分支
+git branch -d name      删除name分支
+git checkout name       切换到name分支  (git switch name)
+git checkout -b name    创建并切换到name分支  (git switch -c name）
+git merge name          把name分支合并到当前分支
+git log --graph         查看分支合并图
+git reset --herd name   强制回退到某个分支或者提交，并且本地文件也会修改
 ```
 
 #### rebase
@@ -108,6 +117,22 @@ git reset --soft HEAD 撤销commit把提交的代码撤回到缓存区
 2 .git rebase 还可以用来，把git  fetch 从远程库拉取下来的代码 合并到本地
 
 3 . 在一的基础上rebase 如果异常退出了vi窗口就可以用 git rebase - -edit -todo 来回到退出之前的vi
+
+4.切换提交位置  使用 git rebase - i进入交互模式 使用 dd 和 shift + p 进行位置交换。
+
+#### 分支
+
+新建分支 ：git br -f xxx @~
+
+查看本地分支：	git br -a 
+
+查看远程仓库 ： git remote -v
+
+提交分支： git push orifin  xxx:master
+
+删除添加文件： rm  
+
+
 
 ## 提交
 
@@ -145,8 +170,7 @@ p	粘贴(粘贴后面的直到有空格)		dw	删除
 编辑模式：
 p	主提交		r	主提交，但编辑提交消息
 s	融入主提交 	f	融入主提交但丢弃此提交的日志消息
-d	删除提交
-
+d	删除提交		
 ```
 
 进入MSYS2 ，如果电脑没有关机，第一条然后进入分屏下进入git本地库内存位置即可使用

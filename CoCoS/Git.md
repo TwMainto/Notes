@@ -134,6 +134,7 @@ git rebase origin/master  //拉取本地origin库的master分支到本地文件�
 git add login.png   //把修改的login.png文件添加到git暂存
 git commit -m"xxx"   //把git暂存的资源提交到git库
 git push origin master  //把本地的git库提交到远程 origin库的master分支中
+提交代码通过 git add -p 一行行加进去，全部到 cache 后，再 git di —cached 全部过一遍。
 ```
 
 ## 更新
@@ -164,3 +165,16 @@ dw 		删除
 5. 进入git库磁盘位置
 
 crtl+ B  中括号
+
+####  开发流程
+
+\- 详细阅读开发文档
+\- 体验其他厂商的游戏
+\- 确认美术资源、音乐资源齐备
+  \- 缺少的资源要有到位日期
+\- 规划开发流程
+  \- 先主体，后细节
+  \- 完成 70% 即安排测试
+\- 通用测试流程
+  \- 分辨率适配
+  \- 断线重连 

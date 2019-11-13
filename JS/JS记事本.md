@@ -92,20 +92,6 @@ typeof [1,2,3,4]             // 返回 object
 typeof {name:'John', age:34} // 返回 object
 ```
 
-#### JavaScript 简单的表单验证
-
-```
-function validateForm(){
-  var x=document.forms["myForm"]["email"].value;
-  var atpos=x.indexOf("@");
-  var dotpos=x.lastIndexOf(".");
-  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
-    alert("不是一个有效的 e-mail 地址");
-    return false;
-  }
-}
-```
-
 #### JSON
 
 | [JSON.parse()](https://www.runoob.com/js/javascript-json-parse.html) | 用于将一个 JSON 字符串转换为 JavaScript 对象。 |
@@ -115,6 +101,43 @@ function validateForm(){
 
 
 
+
+
+
+
+
+
+
+#### JavaScript  实例代码
+
+```javascript
+//邮箱表单验证
+function validateForm(){
+  var x=document.forms["myForm"]["email"].value;
+  var atpos=x.indexOf("@");
+  var dotpos=x.lastIndexOf(".");
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+    alert("不是一个有效的 e-mail 地址");
+    return false;
+  }
+}
+
+//冒泡排序
+x = findMax(1, 123, 500, 115, 44, 88);
+ 
+function findMax() {
+    var i, max = arguments[0];
+   
+    if(arguments.length < 2) return max;
+ 
+    for (i = 0; i < arguments.length; i++) {
+        if (arguments[i] > max) {
+            max = arguments[i];
+        }
+    }
+    return max;
+}
+```
 
 
 

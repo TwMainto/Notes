@@ -1,0 +1,400 @@
+2019-11-13T03:02:35.634Z - normal: Load ~/.CocosCreator/settings.json
+2019-11-13T03:02:36.805Z - normal: Initializing Asset Database
+2019-11-13T03:02:36.808Z - normal: checking language setting...
+2019-11-13T03:02:36.808Z - normal: Language: zh
+2019-11-13T03:02:37.365Z - success: preview server running at http://localhost:7456
+2019-11-13T03:02:37.368Z - success: protocol editor-framework registered
+2019-11-13T03:02:37.368Z - success: protocol app registered
+2019-11-13T03:02:37.368Z - success: protocol theme registered
+2019-11-13T03:02:37.368Z - success: protocol packages registered
+2019-11-13T03:02:37.368Z - success: protocol uuid registerred
+2019-11-13T03:02:37.369Z - success: protocol db registerred
+2019-11-13T03:02:37.369Z - success: protocol thumbnail registerred
+2019-11-13T03:02:37.369Z - success: protocol unpack registerred
+2019-11-13T03:02:37.369Z - success: protocol disable-commonjs registerred
+2019-11-13T03:02:37.533Z - normal: connected!
+2019-11-13T03:02:37.534Z - normal: Check project E:\Code\TyporaCode\Code\xiaomeiStar
+2019-11-13T03:02:37.535Z - normal: Initializing project E:\Code\TyporaCode\Code\xiaomeiStar
+2019-11-13T03:02:37.849Z - normal: Initializing Cocos2d
+2019-11-13T03:02:38.517Z - normal: Initializing engine extends
+2019-11-13T03:02:38.532Z - success: asset-db-debugger loaded
+2019-11-13T03:02:38.533Z - success: baidu-adapter loaded
+2019-11-13T03:02:38.533Z - success: color-picker loaded
+2019-11-13T03:02:38.606Z - success: fb-audience-network loaded
+2019-11-13T03:02:38.646Z - success: fb-live-stream loaded
+2019-11-13T03:02:38.649Z - success: google-play-instant loaded
+2019-11-13T03:02:38.653Z - success: huawei-runtime loaded
+2019-11-13T03:02:38.851Z - success: cpk-publish loaded
+2019-11-13T03:02:38.854Z - success: jsb-adapter loaded
+2019-11-13T03:02:38.858Z - success: oppo-runtime loaded
+2019-11-13T03:02:38.860Z - success: package-manager loaded
+2019-11-13T03:02:38.957Z - success: qqplay-adapter loaded
+2019-11-13T03:02:38.959Z - success: runtime-dev-tools loaded
+2019-11-13T03:02:38.962Z - success: sdkbox loaded
+2019-11-13T03:02:38.965Z - success: tester loaded
+2019-11-13T03:02:38.967Z - success: ui-grid loaded
+2019-11-13T03:02:38.968Z - success: ui-kit-preview-extra loaded
+2019-11-13T03:02:38.970Z - success: ui-kit-preview loaded
+2019-11-13T03:02:38.972Z - success: ui-kit loaded
+2019-11-13T03:02:38.974Z - success: ui-tree loaded
+2019-11-13T03:02:38.978Z - success: vivo-runtime loaded
+2019-11-13T03:02:38.979Z - success: weapp-adapter loaded
+2019-11-13T03:02:38.979Z - success: xiaomi-adapter loaded
+2019-11-13T03:02:39.020Z - success: assets loaded
+2019-11-13T03:02:39.022Z - success: builder loaded
+2019-11-13T03:02:39.243Z - success: cocos-services loaded
+2019-11-13T03:02:39.247Z - success: console loaded
+2019-11-13T03:02:39.276Z - success: fb-instant-games loaded
+2019-11-13T03:02:39.277Z - success: google-instant-games loaded
+2019-11-13T03:02:39.280Z - success: hierarchy loaded
+2019-11-13T03:02:39.282Z - success: inspector loaded
+2019-11-13T03:02:39.283Z - success: keystore loaded
+2019-11-13T03:02:39.286Z - success: node-library loaded
+2019-11-13T03:02:39.288Z - success: package-asset loaded
+2019-11-13T03:02:39.290Z - success: preferences loaded
+2019-11-13T03:02:39.291Z - success: project-exporter loaded
+2019-11-13T03:02:39.292Z - success: project-importer loaded
+2019-11-13T03:02:39.293Z - success: project-settings loaded
+2019-11-13T03:02:39.296Z - success: scene loaded
+2019-11-13T03:02:39.297Z - success: simulator-debugger loaded
+2019-11-13T03:02:39.298Z - success: sprite-editor loaded
+2019-11-13T03:02:39.300Z - success: store loaded
+2019-11-13T03:02:39.302Z - success: timeline loaded
+2019-11-13T03:02:39.308Z - success: xiaomi-runtime loaded
+2019-11-13T03:02:40.451Z - normal: Loading packages
+2019-11-13T03:02:40.457Z - normal: Watching packages
+2019-11-13T03:02:40.869Z - normal: Run Application
+2019-11-13T03:02:41.064Z - info: Cocos Services load base data!
+2019-11-13T03:02:45.027Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T03:07:35.750Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T03:11:04.182Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T03:26:05.592Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T03:30:02.562Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T03:33:02.560Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T03:53:57.929Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T03:54:25.439Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T06:08:55.087Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T06:09:06.077Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T06:17:08.420Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T06:17:31.784Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T06:18:03.364Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T06:19:22.138Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T07:08:24.760Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T07:26:42.951Z - warn: Please change the definition of property 'Bomb' in class 'gameScene'. Starting from v1.10,
+properties in CCClass can not be abbreviated if they are of type RawAsset.
+Please use the complete form.
+For example, if the type is Texture2D, the previous definition is:
+    Bomb: cc.Texture2D,
+If you use JS, it should be changed to:
+    Bomb: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+      default: null,     // object's default value is null
+    },
+If you use TS, it should be changed to:
+    %s: {
+      type: cc.Texture2D // use 'type:' to define Texture2D object directly
+    }
+    %s: cc.Texture2D = null;
+(This helps us to successfully refactor all RawAssets at v2.0, sorry for the inconvenience. 😰 )
+2019-11-13T07:34:02.616Z - normal: 解压 消灭星星源码 成功
+2019-11-13T07:38:06.350Z - success: ui-kit unloaded
+2019-11-13T07:38:06.357Z - success: ui-kit loaded
+2019-11-13T07:39:25.627Z - error: Failed to remove menu in path: 开发者/AssetDB Debugger (could not be found)
+    at a.remove (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\menu.js:1:2693)
+    at Object.e.remove (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4106)
+    at r.series.n (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\package.js:1:4807)
+    at D:\CocosCreator_2.0.10\resources\app.asar\node_modules\async\lib\async.js:718:13
+    at Immediate.iterate (D:\CocosCreator_2.0.10\resources\app.asar\node_modules\async\lib\async.js:262:13)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2019-11-13T07:39:25.627Z - success: asset-db-debugger unloaded
+2019-11-13T07:39:25.628Z - success: baidu-adapter unloaded
+2019-11-13T07:39:25.628Z - success: color-picker unloaded
+2019-11-13T07:39:25.629Z - success: fb-audience-network unloaded
+2019-11-13T07:39:25.635Z - success: asset-db-debugger loaded
+2019-11-13T07:39:25.635Z - success: baidu-adapter loaded
+2019-11-13T07:39:25.635Z - success: color-picker loaded
+2019-11-13T07:39:25.635Z - success: fb-audience-network loaded
+2019-11-13T07:39:25.793Z - success: fb-live-stream unloaded
+2019-11-13T07:39:25.797Z - success: fb-live-stream loaded
+2019-11-13T07:39:26.014Z - success: huawei-runtime unloaded
+2019-11-13T07:39:26.014Z - success: cpk-publish unloaded
+2019-11-13T07:39:26.053Z - success: huawei-runtime loaded
+2019-11-13T07:39:26.054Z - success: cpk-publish loaded
+2019-11-13T07:39:26.116Z - success: cpk-publish unloaded
+2019-11-13T07:39:26.117Z - success: cpk-publish loaded
+2019-11-13T07:39:26.795Z - success: oppo-runtime unloaded
+2019-11-13T07:39:26.796Z - success: qqplay-adapter unloaded
+2019-11-13T07:39:26.830Z - success: oppo-runtime loaded
+2019-11-13T07:39:26.830Z - success: qqplay-adapter loaded
+2019-11-13T07:39:27.248Z - success: runtime-dev-tools unloaded
+2019-11-13T07:39:27.253Z - success: sdkbox unloaded
+2019-11-13T07:39:27.255Z - error: Failed to remove menu in path: 开发者/UI Preview/ui-grid (could not be found)
+    at a.remove (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\menu.js:1:2693)
+    at Object.e.remove (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4106)
+    at r.series.n (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\package.js:1:4807)
+    at D:\CocosCreator_2.0.10\resources\app.asar\node_modules\async\lib\async.js:718:13
+    at Immediate.iterate (D:\CocosCreator_2.0.10\resources\app.asar\node_modules\async\lib\async.js:262:13)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2019-11-13T07:39:27.256Z - error: Failed to remove menu in path: 开发者/UI Preview/ui-grid-webview (could not be found)
+    at a.remove (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\menu.js:1:2693)
+    at Object.e.remove (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4106)
+    at r.series.n (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\package.js:1:4807)
+    at D:\CocosCreator_2.0.10\resources\app.asar\node_modules\async\lib\async.js:718:13
+    at Immediate.iterate (D:\CocosCreator_2.0.10\resources\app.asar\node_modules\async\lib\async.js:262:13)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2019-11-13T07:39:27.256Z - success: ui-grid unloaded
+2019-11-13T07:39:27.258Z - success: ui-kit-preview-extra unloaded
+2019-11-13T07:39:27.263Z - success: ui-kit-preview unloaded
+2019-11-13T07:39:27.265Z - error: Failed to remove menu in path: 开发者/UI Preview/ui-tree (could not be found)
+    at a.remove (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\menu.js:1:2693)
+    at Object.e.remove (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\main-menu.js:1:4106)
+    at r.series.n (D:\CocosCreator_2.0.10\resources\app.asar\editor-framework\lib\main\package.js:1:4807)
+    at D:\CocosCreator_2.0.10\resources\app.asar\node_modules\async\lib\async.js:718:13
+    at Immediate.iterate (D:\CocosCreator_2.0.10\resources\app.asar\node_modules\async\lib\async.js:262:13)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2019-11-13T07:39:27.265Z - success: ui-tree unloaded
+2019-11-13T07:39:27.265Z - success: vivo-runtime unloaded
+2019-11-13T07:39:27.266Z - success: weapp-adapter unloaded
+2019-11-13T07:39:27.266Z - success: xiaomi-adapter unloaded
+2019-11-13T07:39:27.292Z - success: runtime-dev-tools loaded
+2019-11-13T07:39:27.292Z - success: sdkbox loaded
+2019-11-13T07:39:27.292Z - success: ui-grid loaded
+2019-11-13T07:39:27.292Z - success: ui-kit-preview-extra loaded
+2019-11-13T07:39:27.292Z - success: ui-kit-preview loaded
+2019-11-13T07:39:27.292Z - success: ui-tree loaded
+2019-11-13T07:39:27.292Z - success: vivo-runtime loaded
+2019-11-13T07:39:27.292Z - success: weapp-adapter loaded
+2019-11-13T07:39:27.292Z - success: xiaomi-adapter loaded

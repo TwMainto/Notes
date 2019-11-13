@@ -1,0 +1,24 @@
+{
+  "appKey": "0464EB47-E202-8E11-9601-47EE1AC788D8",
+  "appSecret": "1c5c7c5110b3d379961e2fea2c4d008a",
+  "excludeScenes": [],
+  "includeAnySDK": true,
+  "includeSdk": [
+    "anysdk"
+  ],
+  "inlineSpriteFrames": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.levelstar",
+  "privateKey": "5122B90BE5699796AEB8282FC57310D0",
+  "renderMode": "0",
+  "startScene": "c00b2c46-b151-4f8d-a924-4c8444378660",
+  "title": "levelstar",
+  "webOrientation": "portrait"
+}

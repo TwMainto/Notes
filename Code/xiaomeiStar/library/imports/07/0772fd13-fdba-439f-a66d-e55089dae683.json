@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "blood_01",
+    "texture": "705f6952-c8e6-469a-ae65-3c3dfb341cdd",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      120,
+      18
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      120,
+      18
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

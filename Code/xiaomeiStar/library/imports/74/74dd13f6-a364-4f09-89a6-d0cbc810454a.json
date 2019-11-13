@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "text_goon",
+    "texture": "02638834-c7ca-45fa-81fc-52d5d9e871aa",
+    "atlas": "",
+    "rect": [
+      1,
+      2,
+      145,
+      26
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      147,
+      30
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

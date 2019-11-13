@@ -46,8 +46,6 @@ CocosCreator + CoffeScript 实现跑马灯功能的两种方式：
                 lo.each lo.range(32), (i2) => @["bright#{i2}"].active = false
                 @["bright#{i1}"].active = true
 
-
-
         lo.reduce lo.range(99), Promise.resolve(), (promise, index) =>
             await promise
             await @context.delay 100

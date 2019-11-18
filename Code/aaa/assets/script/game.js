@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 cc.Class({
     extends: cc.Component,
 
@@ -12,3 +13,20 @@ cc.Class({
         
     },
 });
+||||||| merged common ancestors
+=======
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+       boom: cc.Node,
+       
+    },
+
+    start () {
+        //boomAction = this.boom.getComponent(cc.Animation);
+        //boomAction.play();
+        
+    },
+});
+>>>>>>> 2019.11.18 :

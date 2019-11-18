@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "compilerOptions": {
         "target": "es6",
@@ -13,3 +14,21 @@
         "temp"
     ]
 }
+||||||| merged common ancestors
+=======
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "node_modules",
+        ".vscode",
+        "library",
+        "local",
+        "settings",
+        "temp"
+    ]
+}
+>>>>>>> 2019.11.18 :

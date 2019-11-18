@@ -98,7 +98,22 @@ typeof {name:'John', age:34} // 返回 object
 | ------------------------------------------------------------ | ---------------------------------------------- |
 | [JSON.stringify()](https://www.runoob.com/js/javascript-json-stringify.html) | 用于将 JavaScript 值转换为 JSON 字符串。       |
 
+new Date()
 
+```javascript
+var oDay = new Date(); 
+oDay.getFullYear(); //完整的年份
+oDay.getMonth(); //当前的月份(0-11,0代表1月) 获取当前的月份是oDay.getMonth()+1;   
+oDay.getDate(); //当前的日(1-31) 
+oDay.getDay(); //当前的星期X(0-6,0代表星期天) 
+oDay.getTime(); //当前的时间(从1970.1.1开始的毫秒数) 
+oDay.getHours(); //当前的小时数(0-23) 
+oDay.getMinutes(); //当前的分钟数(0-59) 
+oDay.getSeconds(); //当前的秒数(0-59) 
+oDay.getMilliseconds(); //当前的毫秒数(0-999) 
+oDay.toLocaleDateString(); //当前的日期 
+var oTime=oDay.toLocaleTimeString(); //当前的时间  <br>oDay.toLocaleString( ); //日期与时间 
+```
 
 
 
@@ -137,6 +152,28 @@ function findMax() {
     }
     return max;
 }
+
+//cocos 中实现计时器
+startTime() {
+        var self = this;
+        var today = new Date();
+        this.clock.getComponent(cc.Label).string = String(today);
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = this.checkTime(m);
+        s = this.checkTime(s);
+        setTimeout(function () {
+            self.startTime();
+        }, 1000)
+    },
+    
+    checkTime(i) {
+        if (i<10) {
+            i = "0" + i;
+        }
+        return i;
+    },
 ```
 
 

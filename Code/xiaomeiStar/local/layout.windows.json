@@ -99,19 +99,6 @@
         "inspector",
         "scene"
       ]
-    },
-    "window-1573630280686": {
-      "main": false,
-      "url": "packages://store/panel/index.html",
-      "windowType": "simple",
-      "x": 443,
-      "y": 168,
-      "width": 816,
-      "height": 639,
-      "layout": null,
-      "panels": [
-        "store"
-      ]
     }
   },
   "panels": {

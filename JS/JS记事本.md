@@ -79,7 +79,7 @@ String(字符串)方法
 | `unshift()` | 从数组前面添加，可以一次性添加多个(需要添加的值)             |
 | `shift()`   | 从数组前面删除，只删除第一个值(无参数)                       |
 | `join()`    | 将数组的元素组成一个字符串，以方法的参数为分隔符，该方法只有一个参数 |
-|             |                                                              |
+| `map()` | 循环遍历数组中的每个元素，并且返回一个数组，参数：需要执行的方法体。 |
 
 
 
@@ -129,11 +129,51 @@ oDay.toLocaleDateString(); //当前的日期
 var oTime=oDay.toLocaleTimeString(); //当前的时间  <br>oDay.toLocaleString( ); //日期与时间 
 ```
 
+#### 箭头函数
+
+优点： 使代码更加简洁，不会绑定this 。(因为箭头函数不会绑定 this 所有可以用他来写一些不需要 this 的函数)
+
+注意点：
+
+（1）函数体内的`this`对象，就是定义时所在的对象，而不是使用时所在的对象。
+
+（2）不可以当作构造函数，也就是说，不可以使用`new`命令，否则会抛出一个错误。
+
+（3）不可以使用`arguments`对象，该对象在函数体内不存在。如果要用，可以用 `rest` 参数代替。
+
+（4）不可以使用`yield`命令，因此箭头函数不能用作 `Generator` 函数。
+
+```javascript
+const arr = [0,"a",1,"b",2,"c",3,"d",4]                                                           │
+        cc.log("删除第一个值 返回删除的值 ... ",arr.shift());                                           
+        cc.log("反转数组项的顺序 ... ",arr.reverse());                                                 
+        cc.log("排序 ... ",arr.sort());                                                               
+        cc.log("将参数添加到原数组中 返回新的数组 ... ",arr.concat(1,2,[[3,4,5]]));                     
+        // 多个参数箭头函数                                                                           
+        var funcMore = (a,b,c) => cc.log("箭头函数 ... ",a,b,c);                                     
+        // 单个参数箭头函数                                                                           
+        var funcOne = a => cc.log("单个参数的箭头函数 ... ",a);                                       
+        // 没有参数箭头函数                                                                           
+        var funcNo = () => cc.log("没有参数的箭头函数 ... ");                                         
+        funcMore(1,2,3);                                                                             
+        cc.log("箭头函数计算 ... ",funcName(8));                                                       
+        funcOne(4);                                                                                   
+        funcNo(); 
+```
 
 
 
+#### 解构赋值(ES6)
 
 
+
+#### 默认参数值
+
+JS 中允许在没有值或者 `undefined`被传入是使用默认形参
+
+```javascript
+var test = (a, b = 3) => a*b
+```
 
 
 
@@ -150,6 +190,9 @@ function validateForm(){
     return false;
   }
 }
+
+// 把一个数组转换为所有元素都是奇数，并且使用三元表达式和箭头函数
+var arrJi = arrOne.map((arr) => {return arr % 2 === 0 ? arr +1 : arr}); 
 
 //冒泡排序
 x = findMax(1, 123, 500, 115, 44, 88);

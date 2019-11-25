@@ -28,7 +28,7 @@ isNaN(value):		isNaN() 函数用于检查其参数是否是非数字值。如果
 
 js会忽略多余的空格，我可以添加空格来增加代码的可读性，但是对本身代码不产生影响。
 
-**值类型(基本类型)**：字符串（String）、数字(Number)、布尔(Boolean)、对空（Null）、未定义（Undefined）、Symbol。
+**值类型(基本类型)**：字符串（String）、数字(Number)、布尔(Boolean)、空（Null）、未定义（Undefined）、Symbol。
 
 **引用数据类型**：对象(Object)、数组(Array)、函数(Function)。
 
@@ -46,7 +46,7 @@ js会忽略多余的空格，我可以添加空格来增加代码的可读性，
 | \b   | 退格符      |
 | \f   | 换页符      |
 
-String(字符串)方法
+#### String(字符串)方法
 
 | charAt()            | 返回指定索引位置的字符                                       |
 | ------------------- | ------------------------------------------------------------ |
@@ -71,7 +71,7 @@ String(字符串)方法
 | trim()              | 移除字符串首尾空白                                           |
 | valueOf()           | 返回某个字符串对象的原始值                                   |
 
-### 数组操作方法
+#### 数组操作方法
 
 | `push()`    | 从数组后面添加，可以一次性添加多个(需要添加的值)             |
 | ----------- | ------------------------------------------------------------ |
@@ -85,7 +85,7 @@ String(字符串)方法
 
 
 
-### 循环
+#### 循环
 
 ```javaScript
 for (var i=0;i<cars.length;i++)
@@ -96,7 +96,7 @@ for (var i=0;i<cars.length;i++)
 
 **Break 和 Continue** break 语句用于跳出循环。continue 用于跳过循环中的一个迭代。 break和continue一起用必须要用else if 。
 
-typeof 
+#### typeof 
 
 ```javascript
 typeof "John"                // 返回 string
@@ -112,7 +112,7 @@ typeof {name:'John', age:34} // 返回 object
 | ------------------------------------------------------------ | ---------------------------------------------- |
 | [JSON.stringify()](https://www.runoob.com/js/javascript-json-stringify.html) | 用于将 JavaScript 值转换为 JSON 字符串。       |
 
-new Date()
+#### new Date()
 
 ```javascript
 var oDay = new Date(); 
@@ -172,8 +172,18 @@ const arr = [0,"a",1,"b",2,"c",3,"d",4]                                         
 JS 中允许在没有值或者 `undefined`被传入是使用默认形参
 
 ```javascript
-var test = (a, b = 3) => a*b
+var test = (a, b = 3) => a*b 
 ```
+
+#### setInterval()和setTimeout()
+
+setTimeout() 和 setInterval() 经常被用来处理延时和定时任务。 setTimeout()  方法用于在指定的毫秒数后调用函数或者计算表达式， 而setInterval() 则可以在每隔指定毫秒数循环调用函数或计算表达式，直到clearInterval把它清除。
+
+
+
+
+
+
 
 
 

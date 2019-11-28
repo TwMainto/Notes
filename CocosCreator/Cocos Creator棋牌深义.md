@@ -70,3 +70,9 @@ CocosCreator + CoffeScript 实现跑马灯功能的两种方式：
 
 ​	在节点上加入音频组件，勾选Loop和Play On Load ,Preload 然后绑定 music-9c 脚本。控制显隐即可切换。
 
+#### 克隆游戏
+
+```javascript
+./bin/copy 001 111
+```
+

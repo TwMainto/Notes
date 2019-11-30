@@ -63,3 +63,17 @@ o : 进入输入模式
 
 **tmux list-key**　　列出所有绑定的键，等同于**prefix ?**
 **tmux list-command**　　列出所有命令
+
+
+
+
+
+全局搜索	
+
+q:			进入命令输入模式
+
+lvimgrep /***/ **/*/.coffee
+
+lw 打开搜索到的文件列表
+
+lcl	关闭列表

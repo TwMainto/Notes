@@ -80,11 +80,29 @@ Person.prototype.name = 'ahao'	// 向Person函数的原型对象中添加属性
 Person.
 ```
 
+### AsyncFunction(异步方法)
 
+​	AsyncFunction 构造函数用来创建新的 `异步函数` 对象，JavaScript 中每个异步函数都是 AsyncFunction 的对象
 
+AsyncFunction 不是全局对象， 需要通过下面方法来获取:
 
+```javascript
+Object.getPrototypeOf(async function(){}).constructor
+```
 
+语法
 
+```javascript
+new AsyncFunction([arg1[, arg2[, ...argN]],] functionBody)
+```
+
+### Promise
+
+1. 主要用于异步计算
+2. 可以将异步操作队列化，返回符合预期的结果
+3. 可以在对象之间传递和操作Promise，帮助我们处理队列
+
+​	Promise 的构造函数接收一个参数，是函数，并且传入两个参数： `resolve`,`reject` 分别代表异步操作执行成功后的回调函数和异步操作执行失败后的回调函数。
 
 
 

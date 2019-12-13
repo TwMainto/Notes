@@ -76,3 +76,5 @@ CocosCreator + CoffeScript 实现跑马灯功能的两种方式：
 ./bin/copy 001 111
 ```
 
+cc.bridge.require("Vendor/Debug").setup().call("setServer", { web: "http://10.0.0.145:8090", server: "ws://10.0.0.144:8500" })
+
